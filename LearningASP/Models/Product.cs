@@ -9,6 +9,10 @@ namespace LearningASP.Models
 {
     public class Product
     {
+        /// <summary>
+        /// these following properties are created to convert the Json data in the data folder to C#
+        /// </summary>
+        //prop tab tab to shortcut create properties
         public string Id { get; set; }
         public string Maker { get; set;}
 
@@ -20,9 +24,6 @@ namespace LearningASP.Models
         public string Description { get; set; }
         public int[] Ratings { get; set; }
 
-        public override string ToString()
-        {
-            return JsonSerializer.Serialize<Product>(this);
-        }
+        public override string ToString() => JsonSerializer.Serialize<Product>(this);
     }
 }
