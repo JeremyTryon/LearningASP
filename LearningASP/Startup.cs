@@ -54,6 +54,7 @@ namespace LearningASP
             app.UseStaticFiles();
             app.UseCookiePolicy();
 
+
             app.UseMvc();
         }
     }
